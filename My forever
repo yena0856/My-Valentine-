@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Valentine 💖</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ff4d6d, #ffb3c6);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.2);
+      padding: 30px;
+      border-radius: 25px;
+      max-width: 420px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: white;
+      color: #ff4d6d;
+    }
+
+    .no {
+      background: #ff758f;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <img src="her.jpg" alt="My Valentine">
+
+    <h1>Will you be my Valentine? 💘</h1>
+
+    <p>
+      From the moment you walked into my life, everything changed 🥹❤️  
+      You are my peace, my laughter, and my favourite person in the world.
+    </p>
+
+    <button class="yes" onclick="yesClicked()">YES 💖</button>
+    <button class="no" onmouseover="moveNo()">NO 🙈</button>
+  </div>
+
+  <script>
+    function yesClicked() {
+      alert("YAAAY 😍❤️ Thank you for choosing me. Happy Valentine’s Day!");
+    }
+
+    function moveNo() {
+      const btn = document.querySelector('.no');
+      btn.style.top = Math.random() * 80 + "vh";
+      btn.style.left = Math.random() * 80 + "vw";
+    }
+  </script>
+
+</body>
+</html>
